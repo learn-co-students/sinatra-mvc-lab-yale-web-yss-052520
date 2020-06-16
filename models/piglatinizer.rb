@@ -37,7 +37,8 @@ class PigLatinizer
     end 
 
     def vowel?(letter)
-        if letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u" || letter == "A" || letter == "E" || letter == "I" || letter == "O" || letter == "U"   
+        vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"] 
+        if vowels.find{|vowel| vowel == letter} 
             return true 
         end 
         return false 
